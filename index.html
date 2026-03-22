@@ -3,256 +3,289 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sudhanshu | Professional Profile</title>
+    <title>Sudhanshu | Sales, Presence, Momentum</title>
     <meta
       name="description"
-      content="A modern personal portfolio website for Sudhanshu, blending professional credibility with personality and interactive storytelling."
+      content="A bold personal portfolio for Sudhanshu — aspiring IT sales executive from Mumbai with a story shaped by learning, customer interaction, and professional ambition."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-one"></div>
-    <div class="bg-orb orb-two"></div>
-    <div class="grid-overlay"></div>
+    <div class="noise"></div>
+    <div class="cursor-glow"></div>
 
     <header class="site-header">
-      <nav class="nav container">
-        <a class="brand" href="#home">Sudhanshu</a>
+      <nav class="container nav">
+        <a href="#home" class="brand">Sudhanshu</a>
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#journey">Journey</a>
-          <a href="#strengths">Strengths</a>
-          <a href="#quiz">Know Me</a>
+          <a href="#experience">Experience</a>
+          <a href="#gallery">Presence</a>
           <a href="#contact">Contact</a>
         </div>
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme">
-          <span class="toggle-track">
-            <span class="toggle-thumb"></span>
-          </span>
-          <span class="toggle-label">Dark mode</span>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-toggle__text">Dark</span>
         </button>
       </nav>
     </header>
 
     <main id="home">
       <section class="hero container reveal">
-        <div class="hero-copy">
-          <p class="eyebrow">Aspiring IT Sales Executive • Mumbai, India</p>
-          <h1>
-            Building a career with <span>confidence</span>, communication, and a
-            sharp professional identity.
-          </h1>
-          <p class="hero-text">
-            I am Sudhanshu — a driven, evolving professional with roots in Mumbai,
-            a journey across science, engineering, and computer science, and a
-            growing ambition to create impact in the world of IT sales.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Let’s Connect</a>
-            <a class="btn btn-secondary" href="#quiz">Do You Really Know Me?</a>
-          </div>
-          <ul class="hero-highlights">
-            <li>Professional yet approachable</li>
-            <li>Strong learning mindset</li>
-            <li>Ready for the next chapter</li>
-          </ul>
+        <div class="hero-topline">
+          <span>Mumbai born</span>
+          <span>Sales-minded</span>
+          <span>Professionally evolving</span>
         </div>
 
-        <div class="hero-visual">
-          <div class="portrait-card glass">
-            <div class="portrait-main floating">
-              <div class="portrait-placeholder">
-                <span>Add your best portrait here</span>
-                <small>Replace with a professional headshot</small>
-              </div>
-            </div>
-            <div class="mini-card glass">
-              <strong>Profile Presence</strong>
-              <p>Elegant layout crafted to impress recruiters and people of every age group.</p>
-            </div>
-            <div class="mini-card glass delay">
-              <strong>Photo Suggestions</strong>
-              <p>Add 2–3 images: formal portrait, candid lifestyle shot, and achievement photo.</p>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Aspiring IT Sales Executive</p>
+            <h1>
+              I bring <span>presence</span>, people skills, and a calm confidence to every room I enter.
+            </h1>
+            <p class="hero-text">
+              I am Sudhanshu — a young professional from Mumbai building a career at
+              the intersection of communication, sales thinking, and continuous growth.
+              My journey moves through science, engineering, computer science, and real
+              customer-facing work experience in the real estate space.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">View my profile</a>
+              <a class="btn btn-ghost" href="#experience">See experience</a>
             </div>
           </div>
+
+          <div class="hero-visual">
+            <article class="hero-photo-card panel tilt-card">
+              <img src="assets/portrait-smile.png" alt="Sudhanshu smiling in a candid portrait" />
+              <div class="photo-overlay">
+                <p>Professional energy.</p>
+                <span>Approachable • Sharp • Composed</span>
+              </div>
+            </article>
+            <article class="hero-side-note panel">
+              <p>Born on <strong>17 March 2002</strong> in Mumbai, I am currently completing my bachelor’s degree in computer science while preparing for the next stage of my career.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="statement-band reveal">
+        <div class="statement-track">
+          <span>professional identity</span>
+          <span>professional identity</span>
+          <span>professional identity</span>
+          <span>professional identity</span>
         </div>
       </section>
 
       <section id="about" class="about container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">About Me</p>
-          <h2>A personal story told with warmth, discipline, and ambition.</h2>
+        <div class="section-kicker">About me</div>
+        <div class="split-headline">
+          <h2>Not just a graduate in progress — but a person learning how to represent value, build trust, and communicate clearly.</h2>
+          <p>
+            My story is shaped by movement. I began in Mumbai, studied across multiple disciplines,
+            entered the workforce early, gained practical exposure in sales-linked roles, and then made a conscious decision
+            to return and finish my graduation with stronger clarity about the future I want.
+          </p>
         </div>
-        <div class="about-grid">
-          <article class="glass card story-card">
-            <h3>Who I Am</h3>
+
+        <div class="about-layout">
+          <article class="panel about-story">
+            <h3>How I see myself</h3>
             <p>
-              Born in Mumbai on <strong>17 March 2002</strong>, I have grown with a
-              belief that progress comes from consistency, curiosity, and the courage
-              to keep moving forward.
+              I consider myself a resilient and adaptable individual with a natural inclination toward communication,
+              presentation, and building rapport. I like spaces where personality matters, where confidence matters,
+              and where how you speak to people can create results.
             </p>
             <p>
-              My path reflects both versatility and determination — from school and
-              science to engineering and computer science, each step has shaped the
-              way I think, speak, and solve problems.
-            </p>
-            <p>
-              Today, as I prepare to step into the professional world, I want to bring
-              my communication, confidence, adaptability, and people skills into an
-              IT Sales Executive role where I can contribute and continue growing.
+              That is why the role of an IT Sales Executive feels right for me. It combines human connection,
+              business understanding, persuasion, and professionalism — all the areas in which I want to keep growing.
             </p>
           </article>
 
-          <aside class="glass card details-card">
-            <h3>Quick Snapshot</h3>
-            <ul>
-              <li><span>Birthplace</span><strong>Mumbai</strong></li>
-              <li><span>Date of Birth</span><strong>17 March 2002</strong></li>
-              <li><span>Career Direction</span><strong>IT Sales Executive</strong></li>
-              <li><span>Current Stage</span><strong>Completing Bachelor’s in Computer Science</strong></li>
-              <li><span>Style</span><strong>Professional, ambitious, and people-focused</strong></li>
-            </ul>
-          </aside>
+          <article class="panel about-facts">
+            <div>
+              <span>Birth date</span>
+              <strong>17 March 2002</strong>
+            </div>
+            <div>
+              <span>Birthplace</span>
+              <strong>Mumbai</strong>
+            </div>
+            <div>
+              <span>Current focus</span>
+              <strong>Completing B.Sc. Computer Science</strong>
+            </div>
+            <div>
+              <span>Target role</span>
+              <strong>IT Sales Executive</strong>
+            </div>
+          </article>
         </div>
       </section>
 
       <section id="journey" class="journey container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">My Journey</p>
-          <h2>An educational timeline that reflects dedication and evolution.</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item glass card">
-            <span class="timeline-dot"></span>
-            <h3>Schooling</h3>
-            <p>Studied up to 10th standard at <strong>Vinay High School</strong>.</p>
-          </article>
-          <article class="timeline-item glass card">
-            <span class="timeline-dot"></span>
-            <h3>Higher Secondary Education</h3>
+        <div class="section-kicker">Academic path</div>
+        <div class="journey-grid">
+          <div class="journey-intro">
+            <h2>A journey built through discipline, course correction, and range.</h2>
             <p>
-              Completed HSC from <strong>Kirti M. Doongursee College of Arts,
-              Science and Commerce</strong>, Dadar.
+              Every step of my education contributed something valuable — structure, technical understanding,
+              persistence, and the confidence to adapt when life asked me to choose again.
             </p>
-          </article>
-          <article class="timeline-item glass card">
-            <span class="timeline-dot"></span>
-            <h3>Diploma</h3>
-            <p>Earned a diploma in <strong>Mechanical Engineering</strong>.</p>
-          </article>
-          <article class="timeline-item glass card">
-            <span class="timeline-dot"></span>
-            <h3>Bachelor’s Degree</h3>
-            <p>
-              Currently completing a bachelor’s degree in <strong>Computer Science</strong>
-              from <strong>Vivekanand College of Arts, Science and Commerce</strong>,
-              Chembur, Sindhi Society.
-            </p>
-          </article>
-          <article class="timeline-item glass card">
-            <span class="timeline-dot"></span>
-            <h3>Next Destination</h3>
-            <p>
-              Preparing to apply for opportunities as an <strong>IT Sales Executive</strong>
-              and present myself with clarity, confidence, and professionalism.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="strengths" class="strengths container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Professional Identity</p>
-          <h2>The qualities I want people to remember when they meet me.</h2>
-        </div>
-        <div class="strength-grid">
-          <article class="glass card strength-card">
-            <h3>Clear Communication</h3>
-            <p>I want to connect with people thoughtfully, explain ideas well, and build trust through honest conversation.</p>
-          </article>
-          <article class="glass card strength-card">
-            <h3>Growth Mindset</h3>
-            <p>My academic journey shows that I am willing to learn, adapt, and grow across different disciplines.</p>
-          </article>
-          <article class="glass card strength-card">
-            <h3>Professional Presence</h3>
-            <p>I value presentation, discipline, and the kind of personal brand that leaves a strong first impression.</p>
-          </article>
-          <article class="glass card strength-card">
-            <h3>Balanced Personality</h3>
-            <p>I aim to be both polished and relatable — someone who feels professional without losing warmth and sincerity.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="gallery container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Your Photos Here</p>
-          <h2>Add 2–3 images to make this portfolio feel more personal and memorable.</h2>
-        </div>
-        <div class="gallery-grid">
-          <div class="glass photo-slot card">
-            <span>Photo 1</span>
-            <p>Formal portrait in professional attire.</p>
           </div>
-          <div class="glass photo-slot card">
-            <span>Photo 2</span>
-            <p>A candid image that shows your personality.</p>
-          </div>
-          <div class="glass photo-slot card">
-            <span>Photo 3</span>
-            <p>An academic or achievement-related picture.</p>
+          <div class="timeline">
+            <article class="timeline-item panel">
+              <span class="timeline-index">01</span>
+              <div>
+                <h3>Vinay High School</h3>
+                <p>I completed my schooling up to 10th standard here, building the foundation of my academic life.</p>
+              </div>
+            </article>
+            <article class="timeline-item panel">
+              <span class="timeline-index">02</span>
+              <div>
+                <h3>Kirti M. Doongursee College, Dadar</h3>
+                <p>I pursued my HSC in arts, science and commerce, which broadened my outlook before specialization.</p>
+              </div>
+            </article>
+            <article class="timeline-item panel">
+              <span class="timeline-index">03</span>
+              <div>
+                <h3>Diploma in Mechanical Engineering</h3>
+                <p>This phase strengthened my discipline and taught me how structured problem-solving works in practical environments.</p>
+              </div>
+            </article>
+            <article class="timeline-item panel">
+              <span class="timeline-index">04</span>
+              <div>
+                <h3>Vivekanand College, Chembur</h3>
+                <p>I am now close to completing my bachelor’s degree in computer science, which gives me a technical base for the IT industry.</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="quiz" class="quiz container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Do You Really Know Me?</p>
-          <h2>A 10-question interactive quiz that adds personality to the experience.</h2>
-        </div>
-        <div class="glass card quiz-shell">
-          <div class="quiz-progress">
-            <div id="progressBar"></div>
+      <section id="experience" class="experience reveal">
+        <div class="container">
+          <div class="section-kicker">Work experience</div>
+          <div class="experience-head">
+            <h2>Early professional exposure taught me how business conversations work in the real world.</h2>
+            <p>
+              Before focusing fully on completing my degree, I stepped into professional roles that gave me customer-facing exposure,
+              commercial awareness, and a better understanding of how to speak with confidence in business settings.
+            </p>
           </div>
-          <div id="quizCard" class="quiz-card"></div>
-          <div class="quiz-actions">
-            <button id="prevBtn" class="btn btn-secondary">Previous</button>
-            <button id="nextBtn" class="btn btn-primary">Next</button>
+
+          <div class="experience-grid">
+            <article class="panel experience-card large">
+              <span class="label">Qconnect Business Solutions Pvt. Ltd.</span>
+              <h3>Lodha Builders process support</h3>
+              <p>
+                I worked for <strong>5 months and 21 days</strong> in a role connected to Lodha builders processes.
+                This period taught me consistency, communication, process discipline, and the value of presenting myself in a professional way.
+              </p>
+            </article>
+
+            <article class="panel experience-card">
+              <span class="label">Puraniks Builders</span>
+              <h3>Sales-linked professional exposure</h3>
+              <p>
+                I then joined Puraniks Builders, where I worked for close to <strong>3.5 months</strong>.
+                That experience added more customer interaction, workplace maturity, and clarity about the kind of career path I want to build.
+              </p>
+            </article>
+
+            <article class="panel experience-card quote-card">
+              <p>
+                I chose to return and complete my graduation not because I wanted to step back,
+                but because I wanted to move forward with stronger credentials and bigger ambitions.
+              </p>
+            </article>
           </div>
-          <div id="quizResult" class="quiz-result"></div>
         </div>
       </section>
 
-      <section id="contact" class="contact container reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Closing Note</p>
-          <h2>I am ready to turn my journey into a meaningful professional future.</h2>
+      <section class="strengths container reveal">
+        <div class="section-kicker">What defines me</div>
+        <div class="strengths-grid">
+          <article class="panel strength-box">
+            <h3>Communication</h3>
+            <p>I believe confidence is most powerful when it is expressed with clarity, warmth, and respect.</p>
+          </article>
+          <article class="panel strength-box">
+            <h3>Adaptability</h3>
+            <p>My path across education and work shows I can adjust, learn quickly, and keep moving with intention.</p>
+          </article>
+          <article class="panel strength-box">
+            <h3>Professional presence</h3>
+            <p>I care about how I present myself, because first impressions matter in sales, hiring, and leadership.</p>
+          </article>
+          <article class="panel strength-box">
+            <h3>Growth mindset</h3>
+            <p>I am still early in my journey, but I am serious about becoming stronger with every opportunity I take.</p>
+          </article>
         </div>
-        <div class="contact-grid">
-          <article class="glass card closing-message">
+      </section>
+
+      <section id="gallery" class="gallery container reveal">
+        <div class="section-kicker">Visual presence</div>
+        <div class="gallery-heading">
+          <h2>Selected portraits, reframed with a more polished, professional art direction.</h2>
+          <p>
+            I have used your photos with a cleaner editorial treatment — tighter framing, darker overlays, monochrome accents,
+            and stronger composition — so they feel more premium and portfolio-ready.
+          </p>
+        </div>
+        <div class="gallery-masonry">
+          <figure class="panel gallery-card tall tilt-card">
+            <img src="assets/profile-side.jpg" alt="Sudhanshu in a side-profile portrait" />
+            <figcaption>Profile study</figcaption>
+          </figure>
+          <figure class="panel gallery-card wide">
+            <img src="assets/bank-street.jpg" alt="Sudhanshu standing on Bank Street Cross Lane in Mumbai" />
+            <figcaption>Mumbai street frame</figcaption>
+          </figure>
+          <figure class="panel gallery-card">
+            <img src="assets/portrait-black.jpg" alt="Sudhanshu in a black shirt portrait" />
+            <figcaption>Clean silhouette</figcaption>
+          </figure>
+          <figure class="panel gallery-card">
+            <img src="assets/event-night.jpg" alt="Sudhanshu at an evening event" />
+            <figcaption>Night presence</figcaption>
+          </figure>
+          <figure class="panel gallery-card wide">
+            <img src="assets/portrait-smile.png" alt="Sudhanshu smiling with flowers" />
+            <figcaption>Approachable confidence</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="contact" class="contact reveal">
+        <div class="container contact-panel panel">
+          <div>
+            <div class="section-kicker">Closing note</div>
+            <h2>I am now ready to translate my journey into a serious professional beginning.</h2>
+          </div>
+          <div>
             <p>
-              Thank you for visiting my digital profile. This website is more than a
-              portfolio — it is a reflection of who I am, where I come from, and how
-              seriously I take the future I am building.
+              If you are a recruiter, hiring manager, employer, or someone getting to know me professionally,
+              I want this portfolio to communicate one thing clearly: I am ambitious, presentable, eager to learn,
+              and ready to contribute in a role where communication and trust matter.
             </p>
             <p>
-              If you are a recruiter, employer, mentor, or someone simply getting to
-              know me, I hope this space leaves you with one clear impression:
-              <strong>I am ready to learn, contribute, and grow with purpose.</strong>
+              My next step is an opportunity in IT sales where I can combine people skills, confidence, and technical awareness with real growth.
             </p>
-          </article>
-          <article class="glass card recruiter-note">
-            <h3>Ideal for Recruiters</h3>
-            <p>Use this portfolio alongside your resume to present a polished personal brand for IT sales opportunities.</p>
-            <p class="muted">Tip: add your phone number, email address, LinkedIn, and resume link here before sharing publicly.</p>
-          </article>
+          </div>
         </div>
       </section>
     </main>
